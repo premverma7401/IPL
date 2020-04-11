@@ -46,9 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\IDataConnection.cs" />
+    <Compile Include="DataAccess\IPrizeRequester.cs" />
+    <Compile Include="DataAccess\ITeamRequester.cs" />
     <Compile Include="DataAccess\SqlConnection.cs" />
-    <Compile Include="DataAccess\TextConnection.cs" />
-    <Compile Include="DataAccess\TextConnectionProcessor.cs" />
     <Compile Include="enums.cs" />
     <Compile Include="GlobalConfig.cs" />
     <Compile Include="Models\MatchUpEntryModel.cs" />

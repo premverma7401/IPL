@@ -11,9 +11,9 @@ C:\Users\Prem\source\repos\IPL\TrackerUI\bin\Debug\TrackerUI.exe.config
 C:\Users\Prem\source\repos\IPL\TrackerUI\bin\Debug\TrackerUI.exe
 C:\Users\Prem\source\repos\IPL\TrackerUI\bin\Debug\TrackerUI.pdb
 C:\Users\Prem\source\repos\IPL\TrackerUI\bin\Debug\TTrackerLibrary.dll
+C:\Users\Prem\source\repos\IPL\TrackerUI\bin\Debug\Dapper.dll
 C:\Users\Prem\source\repos\IPL\TrackerUI\bin\Debug\TTrackerLibrary.pdb
+C:\Users\Prem\source\repos\IPL\TrackerUI\bin\Debug\Dapper.xml
 C:\Users\Prem\source\repos\IPL\TrackerUI\obj\Debug\TrackerUI.csproj.CopyComplete
 C:\Users\Prem\source\repos\IPL\TrackerUI\obj\Debug\TrackerUI.exe
 C:\Users\Prem\source\repos\IPL\TrackerUI\obj\Debug\TrackerUI.pdb
-C:\Users\Prem\source\repos\IPL\TrackerUI\bin\Debug\Dapper.dll
-C:\Users\Prem\source\repos\IPL\TrackerUI\bin\Debug\Dapper.xml

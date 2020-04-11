@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
 using TTrackerLibrary;
-using TTrackerLibrary.DataAccess.TextHelpers;
 
 namespace TTrackerLibrary
 {
@@ -17,8 +16,6 @@ namespace TTrackerLibrary
             }
             if (db == DatabaseType.textFile)
             {
-                TextConnection text = new TextConnection();
-                Connections = text;
             }
         }
 

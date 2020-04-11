@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTrackerLibrary;
+using TTrackerLibrary.DataAccess;
 
 namespace TrackerUI
 {
@@ -15,12 +16,13 @@ namespace TrackerUI
     {
         private List<PersonModel> availableTeamMembers = GlobalConfig.Connections.GetPerson_All();
         private List<PersonModel> selectedTeamMembers = new List<PersonModel>();
-        public CreateTeamForm()
+        private ITeamRequester callingForm;
+        public CreateTeamForm(ITeamRequester caller)
         {
             InitializeComponent();
+            callingForm = caller;
             WireUpDD();
         }
-
         private void addTeamBtn_Click(object sender, EventArgs e)
         {
             PersonModel p = (PersonModel)teamMemberDropDown.SelectedItem;
@@ -41,8 +43,6 @@ namespace TrackerUI
             tmMemberListBox.DataSource = selectedTeamMembers;
             tmMemberListBox.DisplayMember = "FullName";
         }
-
-
         private void createMemberBtn_Click(object sender, EventArgs e)
         {
             if (ValidateForm())
@@ -93,7 +93,6 @@ namespace TrackerUI
             mailInput.Text = "";
             mobileInput.Text = "";
         }
-
         private void dltMemberBtn_Click(object sender, EventArgs e)
         {
             PersonModel p = (PersonModel)tmMemberListBox.SelectedItem;
@@ -103,6 +102,19 @@ namespace TrackerUI
                 availableTeamMembers.Add(p);
                 WireUpDD();
             }
+        }
+        private void createTeamBtn_Click(object sender, EventArgs e)
+        {
+            //save team and get team id
+            TeamModel model = new TeamModel();
+            model.TeamName = teamNameInput.Text;
+            model.TeamMembers = selectedTeamMembers;
+            GlobalConfig.Connections.CreateTeam(model);
+            callingForm.TeamComplete(model);
+            this.Close();
+
+
+
         }
     }
 }

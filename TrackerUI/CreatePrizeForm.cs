@@ -8,14 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTrackerLibrary;
+using TTrackerLibrary.DataAccess;
 
 namespace TrackerUI
 {
     public partial class CreatePrizeForm : Form
     {
-        public CreatePrizeForm()
+        IPrizeRequester callingForm;
+        public CreatePrizeForm(IPrizeRequester caller)
         {
             InitializeComponent();
+            callingForm = caller;
         }
 
         private void createPrizerBtn_Click(object sender, EventArgs e)
@@ -29,7 +32,9 @@ namespace TrackerUI
                     pPercentageInput.Text);
                 // Here sending model data to db.
                 GlobalConfig.Connections.CreatePrize(model);
-                ClearForm();
+                callingForm.PrizeComplete(model);
+                this.Close();
+               // ClearForm();
             }
             else
             {

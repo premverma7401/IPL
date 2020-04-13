@@ -34,8 +34,12 @@ namespace TrackerUI
                 model.TournamentName = trnNameInput.Text;
                 model.EnteredTeams = selectedTeams;
                 model.Prizes = selectedPrizes;
+
+                // Create tournament goes here
+                TournamentLogic.CreateRounds(model);
                 GlobalConfig.Connections.CreateTournament(model);
                 this.Close();
+              
             }
             else
             {

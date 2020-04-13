@@ -56,9 +56,14 @@ namespace TTrackerLibrary
                 SaveTournament(connection, model);
                 SaveTournamentPrizes(connection, model);
                 SaveTournamentTeams(connection, model);
+                SaveTournamentRounds(connection, model);
 
                 return model;
             }
+        }
+        private void SaveTournamentRounds(IDbConnection connection, TournamentModel model)
+        {
+            // 
         }
         private void SaveTournament(IDbConnection connection, TournamentModel model)
         {

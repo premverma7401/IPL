@@ -1,9 +1,2 @@
 C:\Users\Prem\source\repos\IPL\TTrackerLibrary\obj\Debug\TTrackerLibrary.csprojAssemblyReference.cache
 C:\Users\Prem\source\repos\IPL\TTrackerLibrary\obj\Debug\TTrackerLibrary.csproj.CoreCompileInputs.cache
-C:\Users\Prem\source\repos\IPL\TTrackerLibrary\bin\Debug\TTrackerLibrary.dll
-C:\Users\Prem\source\repos\IPL\TTrackerLibrary\bin\Debug\TTrackerLibrary.pdb
-C:\Users\Prem\source\repos\IPL\TTrackerLibrary\bin\Debug\Dapper.dll
-C:\Users\Prem\source\repos\IPL\TTrackerLibrary\bin\Debug\Dapper.xml
-C:\Users\Prem\source\repos\IPL\TTrackerLibrary\obj\Debug\TTrackerLibrary.csproj.CopyComplete
-C:\Users\Prem\source\repos\IPL\TTrackerLibrary\obj\Debug\TTrackerLibrary.dll
-C:\Users\Prem\source\repos\IPL\TTrackerLibrary\obj\Debug\TTrackerLibrary.pdb

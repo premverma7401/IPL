@@ -34,7 +34,7 @@ namespace TrackerUI
                 GlobalConfig.Connections.CreatePrize(model);
                 callingForm.PrizeComplete(model);
                 this.Close();
-               // ClearForm();
+             
             }
             else
             {
@@ -78,12 +78,6 @@ namespace TrackerUI
             }
             return output;
         }
-        private void ClearForm()
-        {
-            pNumberInput.Text = "";
-            pNameInput.Text = "";
-            pAmountInput.Text = "0";
-            pPercentageInput.Text = "0";
-        }
+      
     }
 }

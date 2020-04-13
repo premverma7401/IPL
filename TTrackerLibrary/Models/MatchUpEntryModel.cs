@@ -4,8 +4,9 @@ namespace TTrackerLibrary
 {
     public class MatchUpEntryModel
     {
-        public List<TeamModel> TeamCompeting { get; set; } = new List<TeamModel>();
-        public List<MatchUpModel> ParentMatch { get; set; } = new List<MatchUpModel>();
+        public int Id { get; set; }
+        public TeamModel TeamCompeting { get; set; } 
+        public MatchUpModel ParentMatch { get; set; }
         public double Score { get; set; }
     }
 }
